@@ -1,3 +1,2 @@
 def xo(s):
-    s = s.lower()
-    return s.count('x') == s.count('o')
+    return sum((c == 'x') - (c == 'o') for c in s.lower()) == 0
